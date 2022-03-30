@@ -1,5 +1,9 @@
+import AddUser from "./components/Users/AddUser";
+
 const App = () => {
-  return(<h1>This is a blank React app</h1>)
+  return(
+    <AddUser />
+  )
 }
 
 export default App;
