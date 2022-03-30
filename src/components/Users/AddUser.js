@@ -3,11 +3,6 @@ import React from "react";
 const AddUser = (props) => {
   const addUserHandler = (event) => {
       event.preventDefault();
-    return (
-      <div>
-        <h1>You submitted a form!</h1>
-      </div>
-    );
   };
   return (
     <div>
