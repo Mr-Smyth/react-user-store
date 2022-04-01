@@ -9,6 +9,8 @@ const AddUser = (props) => {
       <form>
         <label htmlFor="username">Username</label>
         <input id="username" type="text"></input>
+        <label htmlFor="firstname">First name</label>
+        
         <label htmlFor="age">Age (In Years)</label>
         <input id="age" type="number"></input>
         <label htmlFor="email">Email</label>
