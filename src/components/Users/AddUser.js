@@ -14,7 +14,7 @@ const AddUser = (props) => {
         <input id="username" type="text"></input>
         <label htmlFor="firstname">First name</label>
         <input id="firstname" type="text"></input>
-        <label htmlFor="lastname">First name</label>
+        <label htmlFor="lastname">Last name</label>
         <input id="lastname" type="text"></input>
         <label htmlFor="age">Age (In Years)</label>
         <input id="age" type="number"></input>
