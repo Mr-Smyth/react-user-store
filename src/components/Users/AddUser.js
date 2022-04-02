@@ -1,12 +1,15 @@
 import React from "react";
 
+// css
+import './AddUser.css';
+
 const AddUser = (props) => {
   const addUserHandler = (event) => {
       event.preventDefault();
   };
   return (
-    <div>
-      <form>
+    <div className='container'>
+      <form className='box'>
         <label htmlFor="username">Username</label>
         <input id="username" type="text"></input>
         <label htmlFor="firstname">First name</label>

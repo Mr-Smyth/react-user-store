@@ -1,0 +1,25 @@
+.container {
+    height: 98vh;
+    display: flex;
+    width: 400px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 25%;
+    margin-bottom: 75%;
+}
+
+form input {
+    margin-bottom: 40px;
+    font-size: 1.4rem;
+    border-radius: 5px;
+}
+
+form label {
+    margin-bottom: 10px;
+    color: chartreuse;
+}
