@@ -3,7 +3,7 @@ import React from "react";
 import Card from "../UI/Card";
 
 // css
-import './AddUser.css';
+
 
 const AddUser = (props) => {
   const addUserHandler = (event) => {
