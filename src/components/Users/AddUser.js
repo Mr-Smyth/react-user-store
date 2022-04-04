@@ -1,5 +1,7 @@
 import React from "react";
 
+import Card from "../UI/Card";
+
 // css
 import './AddUser.css';
 
@@ -8,7 +10,7 @@ const AddUser = (props) => {
       event.preventDefault();
   };
   return (
-    <div className='container'>
+    <Card className='container'>
       <form className='box'>
         <label htmlFor="username">Username</label>
         <input id="username" type="text"></input>
@@ -23,7 +25,7 @@ const AddUser = (props) => {
 
         <button type="submit">Submit</button>
       </form>
-    </div>
+    </Card>
   );
 };
 
