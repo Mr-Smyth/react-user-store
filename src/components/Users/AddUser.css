@@ -23,3 +23,10 @@ form label {
     margin-bottom: 10px;
     color: chartreuse;
 }
+
+button {
+    font-size: 2rem;
+    border-radius: 10px;
+    background-color: rgba(44, 58, 187, 0.808);
+    color: darkgray;
+}
