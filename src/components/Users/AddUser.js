@@ -3,14 +3,14 @@ import React from "react";
 import Card from "../UI/Card";
 
 // css
-
+import classes from './AddUser.module.css'
 
 const AddUser = (props) => {
   const addUserHandler = (event) => {
       event.preventDefault();
   };
   return (
-    <Card className='container'>
+    <Card myClassName={classes.user}>
       <form className='box'>
         <label htmlFor="username">Username</label>
         <input id="username" type="text"></input>
