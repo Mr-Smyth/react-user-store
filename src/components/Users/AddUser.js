@@ -1,9 +1,11 @@
 import React from "react";
 
 import Card from "../UI/Card";
+import Button from "../UI/Button";
 
 // css
 import classes from './AddUser.module.css'
+
 
 const AddUser = (props) => {
   const addUserHandler = (event) => {
@@ -23,7 +25,7 @@ const AddUser = (props) => {
         <label htmlFor="email">Email</label>
         <input id="email" type="email"></input>
 
-        <button type="submit">Submit</button>
+        <Button myStyles={classes.submit_button}></Button>
       </form>
     </Card>
   );
