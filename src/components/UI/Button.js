@@ -12,6 +12,7 @@ const Button = (props) => {
       // classname will be both the default styles, with overiding from the styles applied to the button being used.
       className={`${classes.button} ${props.myClassName}`}
     >
+        {/* Use the text at the button being used - which is a child of the button */}
       {props.children}
     </button>
   );

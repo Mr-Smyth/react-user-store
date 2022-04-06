@@ -26,3 +26,8 @@
     color: chartreuse;
 }
 
+.user button {
+    border-radius: 0.7rem;
+    padding: 1rem;
+    font-size: 2rem;
+}

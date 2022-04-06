@@ -25,7 +25,7 @@ const AddUser = (props) => {
         <label htmlFor="email">Email</label>
         <input id="email" type="email"></input>
 
-        <Button>Submit this</Button>
+        <Button type="submit" >Submit this</Button>
       </form>
     </Card>
   );
