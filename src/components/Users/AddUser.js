@@ -4,22 +4,24 @@ import Card from "../UI/Card";
 import Button from "../UI/Button";
 
 // css
-import classes from './AddUser.module.css'
-
+import classes from "./AddUser.module.css";
 
 const AddUser = (props) => {
-
   // initialise useState - each time this code is run returns an array with 2 elements
   // we store them here
-  const [enteredUsername, setEnteredUsername] = useState('');
-  const [enteredAge, setEnteredAge] = useState('');
-  const [enteredEmail, setEnteredEmail] = useState('');
+  const [enteredUsername, setEnteredUsername] = useState("");
+  const [enteredAge, setEnteredAge] = useState("");
+  const [enteredEmail, setEnteredEmail] = useState("");
+
+  // Handle form display
+  const [showForm, setShowForm] = useState(false);
 
   // Our Add user from form handler
   const addUserHandler = (event) => {
-      event.preventDefault();
-      // console out the changed value
-      console.log(enteredUsername, enteredAge, enteredEmail);
+    event.preventDefault();
+    // console out the changed value
+    console.log(enteredUsername, enteredAge, enteredEmail);
+    clearForm();
   };
 
   // Our State handler for Username
@@ -36,20 +38,40 @@ const AddUser = (props) => {
   const changeEmailHandler = (event) => {
     setEnteredEmail(event.target.value);
   };
-  
 
+  // just clears the form when asked
+  const clearForm = () => {
+    setEnteredUsername("");
+    setEnteredAge("");
+    setEnteredEmail("");
+  };
 
   return (
     <Card myClassName={classes.user}>
       <form onSubmit={addUserHandler}>
         <label htmlFor="username">Username</label>
-        <input id="username" type="text" onChange={changeUsernameHandler}></input>
+        <input
+          id="username"
+          type="text"
+          value={enteredUsername}
+          onChange={changeUsernameHandler}
+        ></input>
         <label htmlFor="age">Age (In Years)</label>
-        <input id="age" type="number" onChange={changeAgeHandler}></input>
+        <input
+          id="age"
+          type="number"
+          value={enteredAge}
+          onChange={changeAgeHandler}
+        ></input>
         <label htmlFor="email">Email</label>
-        <input id="email" type="email" onChange={changeEmailHandler}></input>
+        <input
+          id="email"
+          type="email"
+          value={enteredEmail}
+          onChange={changeEmailHandler}
+        ></input>
 
-        <Button type="submit" >Submit this</Button>
+        <Button type="submit">Submit this</Button>
       </form>
     </Card>
   );
