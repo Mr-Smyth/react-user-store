@@ -13,12 +13,13 @@ const AddUser = (props) => {
   // we store them here
   const [enteredUsername, setEnteredUsername] = useState('');
   const [enteredAge, setEnteredAge] = useState('');
+  const [enteredEmail, setEnteredEmail] = useState('');
 
   // Our Add user from form handler
   const addUserHandler = (event) => {
       event.preventDefault();
       // console out the changed value
-      console.log(enteredUsername);
+      console.log(enteredUsername, enteredAge, enteredEmail);
   };
 
   // Our State handler for Username
@@ -26,9 +27,14 @@ const AddUser = (props) => {
     setEnteredUsername(event.target.value);
   };
 
-  // Our State handler for Username
+  // Our State handler for Age
   const changeAgeHandler = (event) => {
     setEnteredAge(event.target.value);
+  };
+
+  // Our State handler for email
+  const changeEmailHandler = (event) => {
+    setEnteredEmail(event.target.value);
   };
   
 
@@ -41,7 +47,7 @@ const AddUser = (props) => {
         <label htmlFor="age">Age (In Years)</label>
         <input id="age" type="number" onChange={changeAgeHandler}></input>
         <label htmlFor="email">Email</label>
-        <input id="email" type="email"></input>
+        <input id="email" type="email" onChange={changeEmailHandler}></input>
 
         <Button type="submit" >Submit this</Button>
       </form>
