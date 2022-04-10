@@ -21,8 +21,7 @@ const AddUser = (props) => {
     event.preventDefault();
     if (enteredUsername.trim().length <= 2) {
       return;
-    }
-    else if (+enteredAge < 18) {
+    } else if (+enteredAge < 18) {
       return;
     }
     // console out the changed value
