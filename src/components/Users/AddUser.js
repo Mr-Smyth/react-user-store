@@ -19,6 +19,12 @@ const AddUser = (props) => {
   // Our Add user from form handler
   const addUserHandler = (event) => {
     event.preventDefault();
+    if (enteredUsername.trim().length <= 2) {
+      return;
+    }
+    else if (+enteredAge < 18) {
+      return;
+    }
     // console out the changed value
     console.log(enteredUsername, enteredAge, enteredEmail);
     clearForm();
