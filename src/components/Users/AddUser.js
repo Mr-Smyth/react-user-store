@@ -24,8 +24,7 @@ const AddUser = (props) => {
     } else if (+enteredAge < 18) {
       return;
     }
-    // console out the changed value
-    console.log(enteredUsername, enteredAge, enteredEmail);
+    props.onAddUser(enteredUsername, enteredAge, enteredEmail);
     clearForm();
   };
 
