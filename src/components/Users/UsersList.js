@@ -12,7 +12,6 @@ const UsersList = (props) => {
           <li>Username : {user.username}</li>
           <li>Age : {user.age}</li>
           <li>email : {user.email}</li>
-          <li>-----------------------------------</li>
         </ul>
       ))}
     </Card>
