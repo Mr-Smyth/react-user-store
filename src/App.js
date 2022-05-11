@@ -16,7 +16,7 @@ const App = () => {
     // so we add in a function which returns prev state
     setUsersList((prevUserList) => {
       // return an array with previous objects, and add the latest one onto the end
-      return [...prevUserList, { username: uName, age: uAge, email: uEmail }];
+      return [...prevUserList, { username: uName, age: uAge, email: uEmail, id: Math.floor((Math.random() * 9999999) + 1).toString()}];
     });
   };
 
