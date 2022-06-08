@@ -13,10 +13,10 @@ const AddUser = (props) => {
   const [enteredUsername, setEnteredUsername] = useState("");
   const [enteredAge, setEnteredAge] = useState("");
   const [enteredEmail, setEnteredEmail] = useState("");
-  const [error, setError] = useState();
+  const [error, setError] = useState(false);
 
   // Handle form display
-  const [showForm, setShowForm] = useState(false);
+  const [showForm, setShowForm] = useState();
 
   // Our Add user from form handler
   const addUserHandler = (event) => {
@@ -53,6 +53,12 @@ const AddUser = (props) => {
     setEnteredEmail(event.target.value);
   };
 
+
+  // Our Error handler - to remove the error
+  const errorHandler = () => {
+    setError(null);
+  }
+
   // just clears the form when asked
   const clearForm = () => {
     setEnteredUsername("");
@@ -62,7 +68,7 @@ const AddUser = (props) => {
 
   return (
     <div>
-      {error && <ErrorModal title={error.title} message={error.message} />}
+      {error && <ErrorModal title={error.title} message={error.message} onConfirm={errorHandler}/>}
       <Card myClassName={classes.user}>
         <form onSubmit={addUserHandler}>
           <label htmlFor="username">Username</label>
