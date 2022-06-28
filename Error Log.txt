@@ -1,0 +1,112 @@
+---------------------------------------------------
+Error Details: 
+Category: SERVER
+Type: SERVER_ERROR
+Severity: CONFIG
+Incident ID: 20617776821654793139798
+Suggestions: TRY_AGAIN
+CONTACT_SUPPORT
+
+---------------------------------------------------
+Source: 
+OPERATION: Processing TARGET: Creating No show charge
+StackTrace: 
+com.phorest.memento.client.desktop.core.exception.ClientCoreResourceException: 500:INTERNAL_SERVER_ERROR incident id: 20617776821654793139798 null On resource: https://prod.phorest.com/memento/rest/business/FmBPC1nppjN69c9JLU3ZPA/branch/clA9hs-6ef0uWT6wb5bqTA/appointment/noshowprotectioncharge
+	com.phorest.memento.client.desktop.core.driver.net.resource.util.ResourceExceptionBuilder.throwClientCoreResourceException(ResourceExceptionBuilder.java:99)
+	com.phorest.memento.client.desktop.core.driver.net.resource.impl.DefaultRESTClient.post(DefaultRESTClient.java:324)
+	com.phorest.memento.client.desktop.core.service.impl.DefaultEntityDataService.create(DefaultEntityDataService.java:102)
+	com.phorest.memento.client.desktop.core.service.impl.DefaultEntityDataService.create(DefaultEntityDataService.java:77)
+	com.phorest.memento.client.desktop.ui.panel.CalendarPanel$30.doInBackground(CalendarPanel.java:4208)
+	com.phorest.memento.client.desktop.ui.panel.CalendarPanel$30.doInBackground(CalendarPanel.java:4203)
+	com.phorest.memento.client.desktop.ui.util.PanelEntityUtil$2.doInBackground(PanelEntityUtil.java:546)
+	javax.swing.SwingWorker$1.call(SwingWorker.java:295)
+	java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	javax.swing.SwingWorker.run(SwingWorker.java:334)
+	java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	java.lang.Thread.run(Thread.java:745)
+
+
+---------------------------------------------------
+Application State: gopherProxySet : false
+awt.toolkit : sun.lwawt.macosx.LWCToolkit
+jxbrowser.chromium.dir : /Users/phorest
+install4j.launcherId : 5
+file.encoding.pkg : sun.io
+java.specification.version : 1.8
+sun.cpu.isalist : 
+jxbrowser.logging.file : /Users/phorest/.memento/log/jxbrowser.log
+sun.jnu.encoding : UTF-8
+awt.dnd.drag.threshold : 30
+sun.awt.enableExtraMouseButtons : true
+java.class.path : /Applications/Memento/bin/Phorest.app/../../.install4j/i4jruntime.jar:/Applications/Memento/bin/Phorest.app/../../launcher/memento-client-desktop-launcher-8.4.9.1.jar
+java.vm.vendor : Oracle Corporation
+sun.arch.data.model : 64
+i4j.ownBundlePath : /Applications/Memento/bin/Phorest.app
+install4j.exeDir : /Applications/Memento/bin/
+sun.font.fontmanager : sun.font.CFontManager
+java.vendor.url : http://java.oracle.com/
+user.timezone : Europe/Dublin
+user.country.format : IE
+os.name : Mac OS X
+java.vm.specification.version : 1.8
+sun.java.launcher : SUN_STANDARD
+user.country : GB
+sun.boot.library.path : /Applications/Memento/.install4j/jre.bundle/Contents/Home/jre/lib
+sun.java.command : com.install4j.runtime.launcher.MacLauncher app memento-client-desktop-ui
+http.nonProxyHosts : local|*.local|169.254/16|*.169.254/16
+sun.cpu.endian : little
+user.home : /Users/phorest
+user.language : en
+SYSTEM_LOCALE : false
+java.specification.vendor : Oracle Corporation
+java.home : /Applications/Memento/.install4j/jre.bundle/Contents/Home/jre
+MEMENTO_LOG_HOME : /Users/phorest/.memento/log
+file.separator : /
+line.separator : 
+
+java.vm.specification.vendor : Oracle Corporation
+java.specification.name : Java Platform API Specification
+exe4j.moduleName : /Applications/Memento/bin/Phorest.app
+java.awt.graphicsenv : sun.awt.CGraphicsEnvironment
+logback.configurationFile : ../app/logback.xml
+sun.boot.class.path : /Applications/Memento/.install4j/jre.bundle/Contents/Home/jre/lib/resources.jar:/Applications/Memento/.install4j/jre.bundle/Contents/Home/jre/lib/rt.jar:/Applications/Memento/.install4j/jre.bundle/Contents/Home/jre/lib/sunrsasign.jar:/Applications/Memento/.install4j/jre.bundle/Contents/Home/jre/lib/jsse.jar:/Applications/Memento/.install4j/jre.bundle/Contents/Home/jre/lib/jce.jar:/Applications/Memento/.install4j/jre.bundle/Contents/Home/jre/lib/charsets.jar:/Applications/Memento/.install4j/jre.bundle/Contents/Home/jre/lib/jfr.jar:/Applications/Memento/.install4j/jre.bundle/Contents/Home/jre/classes
+GLOBAL_LOGIN : true
+sun.management.compiler : HotSpot 64-Bit Tiered Compilers
+ftp.nonProxyHosts : local|*.local|169.254/16|*.169.254/16
+java.runtime.version : 1.8.0_66-b17
+user.name : phorest
+global.launch : true
+path.separator : :
+java.net.useSystemProxies : true
+os.version : 10.16
+java.endorsed.dirs : /Applications/Memento/.install4j/jre.bundle/Contents/Home/jre/lib/endorsed
+java.runtime.name : Java(TM) SE Runtime Environment
+i4jlauncher : true
+proxySet : false
+file.encoding : UTF-8
+user.appdatafolder : /Users/phorest/Library/Caches
+java.vm.name : Java HotSpot(TM) 64-Bit Server VM
+i4j.jreBundle : /Applications/Memento/bin/Phorest.app/../../.install4j/jre.bundle
+timestamp : 1654793139764
+install4j.appDir : /Applications/Memento/
+java.vendor.url.bug : http://bugreport.sun.com/bugreport/
+java.io.tmpdir : /var/folders/5j/mktqsh650cq1d1_sc2w_s0x40000gn/T/
+jpos.config.populatorFile : /Users/phorest/.memento/jpos.xml
+java.version : 1.8.0_66
+user.dir : /Applications/Memento/bin
+os.arch : x86_64
+java.vm.specification.name : Java Virtual Machine Specification
+java.awt.printerjob : sun.lwawt.macosx.CPrinterJob
+sun.os.patch.level : unknown
+java.library.path : /Applications/Memento/bin/native/osx-x86_64
+java.vendor : Oracle Corporation
+java.vm.info : mixed mode
+java.vm.version : 25.66-b17
+sun.io.unicode.encoding : UnicodeBig
+java.ext.dirs : /Users/phorest/Library/Java/Extensions:/Applications/Memento/.install4j/jre.bundle/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+isOnEDT : true
+java.class.version : 52.0
+socksNonProxyHosts : local|*.local|169.254/16|*.169.254/16
+install4j.swt : false
+---------------------------------------------------
