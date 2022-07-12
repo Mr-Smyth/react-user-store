@@ -5,6 +5,10 @@ import Card from "./Card";
 import Button from "./Button";
 import classes from "./ErrorModal.module.css";
 
+const Backdrop = props => {
+  return <div className={classes.backdrop} onClick={props.onConfirm}/>
+}
+
 const ErrorModal = (props) => {
   return (
     <div>
